@@ -1,0 +1,253 @@
+#formulario { 
+    padding: 20px 0px 0px 30px;   
+    font-family:verdana,arial;
+    font-size:9pt;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#circle {
+    border: 3px solid #ddd;
+    width: 370px;
+    height: 380px;
+    border-radius: 50%;
+    background-image: url(imagen1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0px auto;
+    padding:3%
+}
+
+.campos { 
+    font-family:verdana,arial;     /* tipo de letra */ 
+    width: 500px;                 /* anchura de campos de formulario */ 
+    font-size:15pt;                /* tamaño de la letra*/  
+    color:#0a0a0a;                 /* color del texto */  
+    border: 1px outset black;        /* color del borde puede ser solid ó dotted */  
+    background-color:#6CA2C7;    /* color del fondo */
+} 
+
+.boton{
+    font-size:12px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:#0000FF;
+    background:#A4C1FF;
+    border:0px;
+    width:120px;
+    height:25px;
+}
+
+.contenedor1{	
+  display: table;
+  background-color: none;
+  height: 100px;
+  width: 100%;
+  text-align:center;
+}
+
+#b_submit { 
+    float: left;
+    margin-right: 20px;   
+} 
+
+#b_submit_2{
+	float: right;
+	margin-right: 0px;   
+}
+
+#b_reset { 
+    float: right;
+    margin-left: 20px;;    
+}
+
+#header{
+	height: auto;
+	width: 90%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	box-sixing: border-box;
+	height: 100px;
+	transition: 0.5s;
+	background-color: black;
+	border: 4px solid black;
+}
+
+.logo{
+	height: 100%;
+}
+
+.main-menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.menu-item{
+	margin: 0 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.5s;
+	color: #f2f2f2;
+}
+
+.cta{
+	padding: 10px 24px;
+	border-radius: 30px;
+	background-color: var(--main-color);
+	color: #f2f2f2;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.cta:hover{
+	color: #f2f2f2;
+	background-color: #04548a;
+}
+
+.menu_item:hover{
+	color: var(--main-color);	
+}
+
+/*CUSTOM VARIABLES HERE*/
+.trigger-menu-wrapper {
+  transition: transform 0.4s;
+}
+ 
+.scroll-down .trigger-menu-wrapper {
+  transform: translate3d(0, -100%, 0);
+}
+ 
+.scroll-up .trigger-menu-wrapper {
+  transform: none;
+}
+ 
+.scroll-up:not(.menu-open) .trigger-menu-wrapper {
+  background: var(--lightpurple);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+
+/*CSS_HOME*/
+
+.padre {
+  display: flex;
+  justify-content: center;
+}
+
+.hijo{
+	padding: 10px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+.boton_home{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:#0000FF;
+    background:#A4C1FF;
+    border:0px;
+    width: 260px;
+    height:150px;
+}
+
+/*CSS_AGENDA*/
+#b_consultar_a { 
+    float: center;   
+} 
+
+#b_modificar_a { 
+    float: center; 
+} 
+
+#b_eliminar_c { 
+    float: center; 
+} 
+
+.boton_agenda{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:#0000FF;
+    background:#A4C1FF;
+    border:0px;
+    width:380px;
+    height:140px;
+}
+
+/*PACIENTES*/
+
+#b_submit_pacientes { 
+   float: center;
+}
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
